@@ -6,6 +6,7 @@
     --background-foter: #2F303A;
     --background-header: #FFFFFF;
     --text-color: #212121;
+    --text-not-general: #757575;
 }
 
 
@@ -81,7 +82,7 @@ body {
 }
 
 .header-list-text{
-    color: #757575;
+    color: var(--text-not-general);
     
 }
 
@@ -137,7 +138,7 @@ body {
 }
 
 .section2-list-text-paragraf{
-    color: #757575;
+    color: var(--text-not-general);
 }
 
 .section3{
@@ -261,7 +262,7 @@ body {
 .portfolio-listimg-text-paragraph {
     margin: auto auto 20px 24px;
     font-size: 16px;
-    color: #757575;
+    color: var(--text-not-general);
 }
 
 
@@ -285,7 +286,6 @@ body {
 }
 
 .footer-list{
-    
     font-size: 14px;
 }
 
@@ -301,8 +301,8 @@ body {
 
 .footer-list-a:hover{
     color:var(--background-header)
-    
 }
+
 
 
 
