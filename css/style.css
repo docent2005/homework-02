@@ -1,164 +1,193 @@
-:root {
-    --background-general: #F5F5F5;
-    --border-color: #ECECEC;
-    --logo-color: #2196F3;
-    --background-section: #F5F4FA;
-    --background-foter: #2F303A;
-    --background-header: #FFFFFF;
-    --text-color: #212121;
-    --text-not-general: #757575;
+:root{
+    --general: #FFFFFF;
+    --border: #ECECEC;
+    --logo-blu: #2196F3;
+    --text: #212121;
+    --text-no-general: #757575;
+    --section: #F5F4FA;
+    --footer: #2F303A;
+    --foter-no-general: rgba(255, 255, 255, 0.6);
 }
 
 
-/* //////////////////////// */
-
-
-body {
-    width: 1600px ;
+/*  */
+body{
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-general);
-    color: var(--text-color);
-    letter-spacing: 0.03em;
+    color: var(--text);
+    background-color: var(--general);
+}
+
+.contaner{
+    display: flex;
+    margin: auto;
+    padding: 0px 15px 0px 15px;
+    width: 1200px;
 }
 
 .list{
-    padding: 0%;
     list-style-type: none;
+    padding-inline-start: 0px;
 }
-
-
-/* ////////////////////////// */
-.head-document {
-    background-color: var(--background-header);
-    display: flex;
-    border: solid var(--border-color);
-    border-width: 0px 0px 1px 0px;
-    margin: 0px;
+/*  */
+.header{
+    padding: 24px 0px 24px 0px;
+    text-align: center;
+    border: 1px solid var(--border);
 }
 
 .logo{
-    display: flex;
-    margin-left: 215px;
-    margin-right: 93px;
-    font-family: 'Raleway', sans-serif; 
-    font-family: 'Raleway';
-    font-style: normal;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    
+    letter-spacing: 0.03em;
 }
 
 .logo-blu{
-    color: var(--logo-color);
-    font-family: 'Raleway ', sans-serif;
+    color: var(--logo-blu);
 }
 
-.header-nav-list-text:hover, .header-list-text:hover
-.header-nav-list-text:focus, .header-list-text:focus{
-    color: var(--logo-color);
+.nav{
+    margin-left: 93px;
 }
 
 .navigation{
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-.header-list{
-    display: flex;  
-    margin-top: 32px;
-    margin-bottom: 32px;
-    
-}
-
-.header-nav-list-text, .header-list-text{
-    margin: 25px;
-    text-decoration: none;
-    font-size: 14px;
     font-weight: 500;
+    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 }
 
-.header-list-text{
-    color: var(--text-not-general);
-    
+.navigation li + li{
+    margin-left: 50px;
 }
 
-/*.......Cтудія..........  */
+.header-nav-list-text{
+    text-decoration: none;
+}
+
+.header-nav-list-text:hover,
+.header-nav-list-text:focus{
+    color: var(--logo-blu);
+}
+
+.header-list{
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+}
+
+.header-list-text{
+    text-decoration: none;
+    color: var(--text-no-general);
+}
+
+.header-list-text:hover,
+.header-list-text:focus {
+    color: var(--logo-blu);
+}
+
+.header-list li + li{
+    margin-left: 50px;
+}
+
+/*  */
 
 .section1{
-    background-color: var(--background-foter);
-    width: 1600px;
-    height: 600px;
-    display: flex; 
-    flex-direction: column;
+    background-color: var(--footer);
+    color: var(--general);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .section1-main-text{
-    color: var(--background-header);
-    font-size: 44px;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    margin: 200px auto 30px;
     text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
 .section1-button{
-    width: 216px;
-    height: 50px;
-    margin-left: 692px;
-    background-color: var(--logo-color);
-    color: var(--background-header);
+    display: flex;
+    padding: 10px 32px 10px 32px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     font-size: 16px;
-    border: 0px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    background-color: var(--logo-blu);
+    color: var(--general);
+    border-width: 0px;
     border-radius: 4px;
 }
 
 .section2{
-   
-    font-size: 14px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section2-list{
-    text-decoration: none;
     display: flex;
-    margin: 94px 215px 94px 215px;
+}
+
+.section2-list li+li{
+    margin-left: 30px;
 }
 
 .section2-list-text{
-    width: 270px;
-    margin-right: 30px;
-}
-
-.section2-list-text-head{
-    color: #000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 
 .section2-list-text-paragraf{
-    color: var(--text-not-general);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--text-no-general);
 }
 
 .section3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .section3-maintext{
-    
+    margin: auto;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
-    margin: auto; 
-    margin-bottom: 50px; 
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .section3-list{
     display: flex;
-    text-decoration: none;  
-    margin: auto; 
+    margin: 0%;
+    margin: auto;
+}
+
+.section3-list li+li {
+    margin-left: 30px;
+}
+
+.section3-list-text{
+    width: 370px;
+    height: 294px;
 }
 
 .section3-list-image{
@@ -166,148 +195,172 @@ body {
     height: 294px;
 }
 
-.section3-list-text{
-    margin-right: 30px;
-    justify-content: center;
-}
-
 .section4{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-section);
     padding-top: 94px;
-    padding-bottom: 94px; 
+    padding-bottom: 94px;
+    background-color: var(--section);
 }
 
 .section4-list{
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
+    margin: 0px;
     display: flex;
-    justify-content: center;
 }
+
+.section4-list li+li{
+    margin-left: 30px;
+    
+}
+
 .section4-list-text{
-    background-color: var(--background-header);
-    margin-right: 30px;
+    width: 270px;
+    background-color: var(--general);
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .section4-list-image{
     width: 270px;
     height: 260px;
-    margin-bottom: 30px;
 }
 
 .section4-list-text-maintext{
+    margin-top: 30px;
     margin-bottom: 10px;
+    font-weight: 500;
+
 }
 
-/*.......Портфоліо..........  */
+.section4-list-text>p{
+    font-weight: 400;
+    color: var(--text-no-general);
+}
 
-.portfolio {
+
+/* ///////////////// */
+
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-listb{
     display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    padding-bottom: 69px;
-
+    justify-content: center;
+    margin: 0px;
+    margin-bottom: 50px;
+    gap: 8px;
 }
 
-.portfolio-listb {
-    text-decoration: none;
-    display: flex;
-    margin: 94px auto 50px auto;
-}
-
-.portfolio-listb .button-list+.button-list {
-    margin-left: 25px;
+.portfolio-list-buttons{
+    padding: 6px 22px 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--section);
+    color: var(--text);
+    border-width: 0px;
+    border-radius: 4px;
 }
 
 .portfolio-list-buttons:hover,
-.portfolio-list-buttons:focus {
-    color: var(--background-header);
-    background-color: var(--logo-color);
+.portfolio-list-buttons:focus{
+    background-color: var(--logo-blu);
+    color: var(--general);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list-buttons {
-    background-color: var(--background-section);
-    border-radius: 4px;
-    border: 0px;
-    margin-left: 8px;
-    padding: 6px 25px 6px 25px;
-    font-size: 16px;
-}
-
-.portfolio-listimg{
-    text-decoration: none;
+.portfolio-list{
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 215px;
-    /* flex-shrink: 0; для фіксації розміру */
+    gap: 30px;
 }
 
-.portfolio-listimg-text {
-    border: 1px solid var(--border-color);
-    margin-right: 30px;
-    margin-bottom: 30px;
+.portfolio-listimg-text-head{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
 }
 
-.portfolio-listimg-img {
+.portfolio-listimg-img{
     width: 370px;
     height: 294px;
+    margin: 0px;
 }
 
-.portfolio-listimg-text-head {
-    margin: 20px auto 4px 24px;
+.portfolio-div{
+    margin: 0px;
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
-.portfolio-listimg-text-paragraph {
-    margin: auto auto 20px 24px;
+.portfolio-listimg-text-head{
+    margin: 0px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-listimg-text-paragraph{
+    margin: 0px;
+    font-weight: 400;
     font-size: 16px;
-    color: var(--text-not-general);
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--text-no-general);
 }
 
-
-/*.......Футер..........  */
-
+/*  */
 
 .footer{
-    background-color: var(--background-foter);
-    padding: 60px 0px 60px 215px;
-    color: var(--background-header);    
+    background-color: var(--footer);
+    color: var(--general);
+}
+
+.footer>.contaner{
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo{
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
+    margin: 0px;
     margin-bottom: 20px;
-}
-
-.footer-logo-blu{
-    color: var(--logo-color);  
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--general);
 }
 
 .footer-list{
-    font-size: 14px;
+    margin: 0px;
 }
 
-.footer-list-text{
+.footer-list li+li{
     margin-top: 9px;
-    text-decoration: none; 
 }
 
 .footer-list-a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--foter-no-general);
 }
 
-.footer-list-a:hover{
-    color:var(--background-header)
+.footer-list-a:hover,
+.footer-list-a:focus {
+    color: var(--general);
 }
-
-
-
-
-
-
-
-
-
