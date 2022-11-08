@@ -18,11 +18,30 @@ body{
     background-color: var(--general);
 }
 
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+/* /////////// */
+
 .contaner{
     display: flex;
     margin: auto;
     padding: 0px 15px 0px 15px;
-    width: 1200px;
+    width: 1170px;
 }
 
 .list{
@@ -33,7 +52,13 @@ body{
 .header{
     padding: 24px 0px 24px 0px;
     text-align: center;
-    border: 1px solid var(--border);
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--border);
+    border-style: solid ;
+}
+
+.header>.contaner{
+    align-items: center;
 }
 
 .logo{
@@ -67,10 +92,12 @@ body{
 
 .header-nav-list-text{
     text-decoration: none;
+    color: var(--text);
 }
 
 .header-nav-list-text:hover,
-.header-nav-list-text:focus{
+.header-nav-list-text:focus,
+.header-nav-list-text.current{
     color: var(--logo-blu);
 }
 
@@ -145,7 +172,7 @@ body{
 }
 
 .section2-list-text{
-    margin-bottom: 10px;
+    width: 270px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -153,6 +180,7 @@ body{
 }
 
 .section2-list-text-paragraf{
+    margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -177,8 +205,7 @@ body{
 
 .section3-list{
     display: flex;
-    margin: 0%;
-    margin: auto;
+    margin: 0px;
 }
 
 .section3-list li+li {
@@ -187,7 +214,6 @@ body{
 
 .section3-list-text{
     width: 370px;
-    height: 294px;
 }
 
 .section3-list-image{
@@ -222,13 +248,16 @@ body{
     border-radius: 0px 0px 4px 4px;
 }
 
+.section4-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .section4-list-image{
     width: 270px;
-    height: 260px;
 }
 
 .section4-list-text-maintext{
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
 
@@ -291,14 +320,15 @@ body{
 
 .portfolio-listimg-img{
     width: 370px;
-    height: 294px;
     margin: 0px;
 }
 
 .portfolio-div{
     margin: 0px;
     padding: 20px 24px 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
 }
 
 .portfolio-listimg-text-head{
@@ -324,12 +354,12 @@ body{
 .footer{
     background-color: var(--footer);
     color: var(--general);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer>.contaner{
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer-logo{
